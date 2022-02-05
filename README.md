@@ -54,4 +54,4 @@ I want to focus more on grid projects because I am not very much confident in it
 
 ## Author
 
-- Frontend Mentor - [@aruningh009](https://www.frontendmentor.io/profile/krtksharma)
+- Frontend Mentor - [@krtksharma](https://www.frontendmentor.io/profile/krtksharma)
