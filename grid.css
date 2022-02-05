@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(210, 46%, 95%);
+}
+main {
+    
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    padding: auto;
+    margin:auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+
+    height: fit-content;
+    width: 64rem;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(16rem,1fr));
+    grid-gap:20px;
+}
+.box{
+    border: .2px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    background-color: #fff;
+    height:auto;
+}
+.box-1 {
+    grid-column: 1/span 2;
+    background-color: hsl(263, 55%, 52%);
+    height:17rem;
+    width: 32.5rem;
+}
+.box-1 .image{
+    position:absolute;
+}
+.box-1 .img1{
+    position: relative;
+    left:21.875rem;
+    height: 5.9rem;
+    width: 5.8rem;
+ 
+    
+}
+.box-2{
+    background-color:  #49556b;
+    height:17rem;
+    width:15.6rem; 
+}
+
+.box-3 {
+    grid-area: 1 / 4 / span 2 / span 1;
+    height:34.15rem;
+    width:14.375rem;
+}
+.box-4{
+    grid-area: 2 / 1 / span 1 / span 1;
+    height:16rem;
+    width: 14.375rem;
+}
+.box-5{
+    grid-area: 2/2/ span 1/ span 2;
+    background-color: #18202d;
+    height:16rem;
+    
+}
+.content{
+    width:100%;
+    height: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 20px;
+    padding-left: 30px;
+}
+.ct1 img{
+    border:2px solid hsl(0, 0%, 81%);
+    border-radius: 100%;
+    height: 1.85rem;
+}
+.ct1{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 8.8rem;
+}
+.ct11 h1{
+    font-size:0.95rem;
+    color:hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed';
+    font-weight:500;    
+}
+.ct11 p{
+    font-size:0.85rem;
+    color:hsl(210, 46%, 95%);
+    opacity: 50%;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: lighter;
+
+}
+
+.ct2{
+    width: 92%;
+    color:hsl(0, 0%, 100%);
+    height: 4rem;
+    z-index: 1;
+    line-height:1.6rem;
+    font-size: 1.14rem;
+    font-family: 'Barlow Semi Condensed';
+    
+}
+.ct3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 95%;    
+    color:hsl(210, 46%, 95%);
+    opacity: 70%;
+    padding: 1.5625rem;
+    padding-left: 1.875rem;
+    font-family: 'Barlow Semi Condensed';
+    font-size:12px;
+    line-height: 1.2rem;
+    height: 38%;
+}
+.box-3 .ct1 img{
+        border-radius: 100%;
+        height: 2rem;
+    }
+    
+.box-3 .ct11 h1,.box-4 .ct11 h1{
+        color:hsl(219, 29%, 14%);
+    }
+.box-3 .ct11 p,.box-4 .ct11 p{
+        font-size:0.85rem;
+        color:hsl(219, 29%, 14%);
+        opacity: 50%;
+        font-family: 'Barlow Semi Condensed';
+        font-weight: lighter;
+    
+    }
+    
+.box-3 .ct2, .box-4 .ct2{
+        color:hsl(219, 29%, 14%);
+        font-weight: 600;
+        font-size: 1.125rem;
+        opacity: 70%;
+        }
+.box-3 .ct3{
+        width: 100%; 
+        color:black;
+        opacity: 70%;
+        padding-left: 30px;
+        font-family: 'Barlow Semi Condensed';
+        font-size:0.75rem;
+        line-height: 1.05rem;
+        height: 70%;
+    }
+
+.box-4 .ct3{
+    width: 100%; 
+    color:black;
+    opacity: 70%;
+    padding-left: 30px;
+    font-family: 'Barlow Semi Condensed';
+    font-size:12px;
+    line-height: 1.1rem;
+    height: 35%;
+}
+.box-5 .ct3{
+    width: 95%;
+    height:35%;
+}
+@media(max-width: 500px) {
+    .card {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width:fit-content;
+        height:fit-content;
+        grid-gap:20px;
+
+     }
+  
+    .box-1 , .box-2 , .box-3 , .box-4 , .box-5{
+      grid-column: auto;
+      grid-row: auto;
+      width: 18rem;
+      
+    }
+
+    .box-1{
+        height:26.25rem;
+        
+    }
+    .box-1 .img1{
+        position: relative;
+        left:11.5rem;
+        height: 5.6rem;
+        width: 5.5rem;
+     
+        
+    }
+    .content{
+        width:100%;
+        padding: 20px;
+        padding-left: 25px;
+    }
+    .ct1{
+        width: 8.3rem;
+        
+    }
+
+    .ct11 h1{
+        font-size:0.8rem; 
+    }
+    .ct11 p{
+        font-size:0.8rem; 
+    }
+    .ct2{
+        width:90%;
+        height: 4rem;
+        line-height:1.4rem;
+        font-size: 1.05rem;
+        font-family: 'Barlow Semi Condensed';
+        
+    }
+    .ct3{
+        width: 92%;            
+        font-size:0.6875rem;
+        line-height: 1.1rem;
+        height: 70%;
+    }
+    .box-2{
+        height:13.5rem;
+    }
+    .box-2 .content{
+        height:7.2rem;
+    }
+    .box-2 .ct2{
+        font-size: 1.12rem;
+        height: 2rem;
+    }
+    .box-2 .ct3{
+        width:100%;
+        height: 90px;
+    }
+
+    .box-4{
+        grid-row:3;
+        height:12rem;
+    }
+    .box-4 .ct3{
+        height: 3.75rem;
+    }
+    .box-4 .content{
+        height:7.5rem;
+    }
+    .box-4 .ct2{
+        font-size: 1.12rem;
+        height: 2.2rem;
+    }
+    .box-3{
+        grid-row:5;
+        height:28rem;
+    }
+    .box-3 .ct2{
+        width: 100%;
+        height:2.5rem;
+    }
+    .box-3 .ct3{
+        height: 18rem;
+    }  
+    .box-3 .ct1{
+        width: 60%;
+    } 
+    .box-5{
+        height:22rem;
+    }
+    .box-5 .content , .box-3 .content{
+        height: 8rem;
+    }
+    .box-5 .ct2 {
+        width:92%;
+        height: 2.8rem;
+    }
+    .box-5 .ct3 {
+        height: 16rem;
+    }
+}
